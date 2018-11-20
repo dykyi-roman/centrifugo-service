@@ -3,11 +3,13 @@ Centrifugo service
 
 # Info
 
+![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/image.png)
+
 Centrifugo this is a real-time messaging server and its friends.
 
 This is a documentation for Centrifugo v1 - see its [documentation](https://centrifugal.github.io/centrifugo/) and [full documentation](https://fzambia.gitbooks.io/centrifugal/content/index.html)  
 Current version of Centrifugo is v2 - see its [documentation](https://github.com/oleh-ozimok/php-centrifugo)  
-My view of this documentation - [note](#)
+My view of this documentation - [note](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/my_note.md)
 
 Centrifugal organization provides a set of tools to add real-time features to your web/mobile/desktop application. It brings together several repositories linked by a common purpose – give you a complete and ready to use solution when you want to add real-time events into your application.
 
@@ -41,3 +43,6 @@ Script for generate JWT token:
 # PHP Client
 
 `to be continue...`
+
+## Author
+[Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
