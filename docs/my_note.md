@@ -5,15 +5,16 @@ Centrifugo server is written in Go language. It's an open-source software, the s
 
 
 # Common Commands:
-centrifugo -h        		        = help information for Centrifugo
+`centrifugo -h        		        = help information for Centrifugo` 
 
-centrifugo genconfig 		        = requires configuration file with secret key
+`centrifugo genconfig 		        = requires configuration file with secret key` 
 
-centrifugo --config=config.json         = run Centrifugo instance
+`centrifugo --config=config.json         = run Centrifugo instance` 
 
-centrifugo --config=config.json --admin = use insecure admin mode
+`centrifugo --config=config.json --admin = use insecure admin mode` 
 
-centrifugo --admin --admin_insecure     = use insecure admin mode – no auth required for admin socket      
+`centrifugo --admin --admin_insecure     = use insecure admin mode – no auth required for admin socket` 
+
 
 Read: https://centrifugal.github.io/centrifugo/server/admin/#admin-web-interface
 
