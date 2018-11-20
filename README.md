@@ -1,7 +1,4 @@
-# centrifugo-service
-Centrifugo service
-
-# Info
+# Centrifugo service
 
 ![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/image.png)
 
