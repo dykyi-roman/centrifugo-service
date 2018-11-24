@@ -31,6 +31,15 @@ Script for generate JWT token:
 * [jwt](https://jwt.io/)
 * [codepen.io](https://codepen.io/anon/pen/BGRmye)
 
+# SSL
+
+You may have a SSL [certificate issue](https://stackoverflow.com/questions/29891619/intermittent-err-ssl-protocol-error-error-for-cross-domain-request/29996698#29996698). The connection point rule can be summarized as:
+
+* `wss` connects on `https only`
+
+* `ws` connects `on http`
+
+
 # JS Client
 
 ```
