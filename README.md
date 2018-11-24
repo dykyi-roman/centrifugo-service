@@ -50,6 +50,8 @@ centrifuge.subscribe('public', function (message) {
 centrifuge.connect(); 
 ```
 
+In order have a more detail [read](https://github.com/centrifugal/centrifuge-js) 
+
 # PHP Client
 
 ```
@@ -58,6 +60,8 @@ $client->setSecret("secret key from Centrifugo");
 $client->publish("public", ["message" => "Hello!"]);
 $history = $client->history("public");
 ```
+
+In order have a more detail [read](https://github.com/centrifugal/phpcent) 
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
