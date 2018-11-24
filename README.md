@@ -33,13 +33,13 @@ Script for generate JWT token:
 
 # JS Client
 
-`
+```
 var centrifuge = new Centrifuge('ws://localhost:8000/connection/websocket');
-centrifuge.subscribe('public', function (message) {
-    console.log(message);
-});
-centrifuge.connect();
-`
+centrifuge.subscribe('public', function (message) { 
+    console.log(message); 
+}); 
+centrifuge.connect(); 
+```
 
 # PHP Client
 
