@@ -52,7 +52,12 @@ centrifuge.connect();
 
 # PHP Client
 
-`to be continue...`
+```
+$client = new \phpcent\Client("http://localhost:8000");
+$client->setSecret("secret key from Centrifugo");
+$client->publish("public", ["message" => "Hello!"]);
+$history = $client->history("public");
+```
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
