@@ -64,8 +64,11 @@ $client->setSecret("secret key from Centrifugo");
 $client->publish("public", ["message" => "Hello!"]);
 $history = $client->history("public");
 ```
-
 In order have a more detail [read](https://github.com/centrifugal/phpcent) 
+
+# Example
+
+Code Example you can find in folder /code. 
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
