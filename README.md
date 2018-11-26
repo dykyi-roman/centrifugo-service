@@ -68,7 +68,7 @@ In order have a more detail [read](https://github.com/centrifugal/phpcent)
 
 # Example
 
-Code Example you can find in folder /code. 
+Code Example you can find in folder (code)[https://github.com/dykyi-roman/centrifugo-service/tree/master/code]. 
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
