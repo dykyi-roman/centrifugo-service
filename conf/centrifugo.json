@@ -1,5 +1,5 @@
 {
-  "secret": "$SECRET_TOKEN",
+  "secret": "$CENTRIFUGO_SECRET",
   "engine": "memory",
   "prometheus": true,
   "admin": true,

@@ -1,7 +1,7 @@
 {
-	"name": "centrifugo-client",
-	"description": "centrifugo client",
-	"keywords": ["centrifugo client"],
+	"name": "centrifugo-app",
+	"description": "centrifugo service",
+	"keywords": ["centrifugo app"],
 	"type": "project",
 	"license": ["MIT"],
 	"minimum-stability": "stable",
