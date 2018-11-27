@@ -68,6 +68,8 @@ In order have a more detail [read](https://github.com/centrifugal/phpcent)
 
 # Example
 
+![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/asfasf.png)
+
 Code Example you can find in folder [code](https://github.com/dykyi-roman/centrifugo-service/tree/master/code) 
 
 ## Author
