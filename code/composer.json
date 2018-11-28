@@ -7,9 +7,12 @@
 	"minimum-stability": "stable",
 	"require": {
 		"php": ">= 7.2",
-		"sl4mmer/phpcent":"dev-master"
+		"ext-json": "*",
+		"guzzlehttp/guzzle": "^6.3",
+		"monolog/monolog": "^1.24"
 	},
 	"require-dev": {
+		"roave/security-advisories": "dev-master",
 		"symfony/var-dumper": "^4.0"
 	},
 	"autoload": {

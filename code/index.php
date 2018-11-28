@@ -1,8 +1,8 @@
 <?php
-    require_once "vendor/autoload.php";
+require_once "vendor/autoload.php";
 
-    $userId = 0;
-    $token = (new \Dykyi\jwtToken())->generateToken($userId);
+$userId = 0;
+$token = (new \Dykyi\jwtToken())->generateToken($userId);
 ?>
 
 <html dir="ltr" lang="en">
@@ -28,6 +28,7 @@
 <button class="disconnect" onclick="disconnect()">Disconnect</button>
 <button class="send" onclick="send()">Send Test Message</button>
 <div class="status"></div>
+<div class="messageCount" data-count=0>messageCount: 0</div>
 
 <script src="web/centrifuge.js"></script>
 <script src="web/main.js"></script>

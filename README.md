@@ -59,12 +59,11 @@ In order have a more detail [read](https://github.com/centrifugal/centrifuge-js)
 # PHP Client
 
 ```
-$client = new \phpcent\Client("http://localhost:8000");
-$client->setSecret("secret key from Centrifugo");
-$client->publish("public", ["message" => "Hello!"]);
-$history = $client->history("public");
+require_once 'vendor/autoload.php';
+
+$client = new \Dykyi\Client\CentrifugoClient('http://localhost:8000','');
+$client->publish('public', ['messageCount' => 1]);
 ```
-In order have a more detail [read](https://github.com/centrifugal/phpcent) 
 
 # Example
 

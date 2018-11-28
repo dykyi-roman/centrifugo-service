@@ -2,8 +2,14 @@
 
 namespace Dykyi;
 
-class jwtToken
+/**
+ * Class jwtToken
+ */
+final class jwtToken
 {
+    /**
+     * @todo Move to .env file
+     */
     private const TOKEN = 'my-secret-token';
 
     /**
@@ -27,12 +33,12 @@ class jwtToken
         return implode('.', $segments);
     }
 
-    protected function urlsafeB64Encode($input)
+    private function urlsafeB64Encode($input)
     {
         return str_replace('=', '', strtr(base64_encode($input), '+/', '-_'));
     }
 
-    protected function sign($msg, $key): string
+    private function sign($msg, $key): string
     {
         return hash_hmac('sha256', $msg, $key, true);
     }
