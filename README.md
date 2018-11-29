@@ -1,6 +1,6 @@
 # Centrifugo service
 
-![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/image.png)
+<img src="https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/image.png" width="350">
 
 Centrifugo this is a real-time messaging server and its friends. Centrifugal organization provides a set of tools to add real-time features to your web/mobile/desktop application. It brings together several repositories linked by a common purpose – give you a complete and ready to use solution when you want to add real-time events into your application.
 
