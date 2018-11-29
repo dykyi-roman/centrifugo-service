@@ -41,7 +41,7 @@ centrifuge.connect();
 
 After success connect to centrifuge you will be see:
 
-![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/example.png)
+![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/server.png)
 
 In order have a more detail [read](https://github.com/centrifugal/centrifuge-js) 
 
