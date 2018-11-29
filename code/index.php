@@ -8,7 +8,7 @@ $token = (new \Dykyi\jwtToken())->generateToken($userId);
 <html dir="ltr" lang="en">
 <head>
     <meta charset="utf8">
-    <title>History</title>
+    <title>Centrifugal JS</title>
 
     <script src="//cdn.jsdelivr.net/sockjs/1.1/sockjs.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js" type="text/javascript"></script>
@@ -26,11 +26,12 @@ $token = (new \Dykyi\jwtToken())->generateToken($userId);
 
 <button class="connect" onclick="connect()">Connect</button>
 <button class="disconnect" onclick="disconnect()">Disconnect</button>
-<button class="send" onclick="send()">Send Test Message</button>
+<button class="send" onclick="send()">Send from JS</button>
 <div class="status"></div>
 <div class="messageCount" data-count=0>messageCount: 0</div>
 
 <script src="web/centrifuge.js"></script>
+<script src="web/client.js"></script>
 <script src="web/main.js"></script>
 
 </body>

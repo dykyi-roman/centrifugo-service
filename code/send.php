@@ -7,9 +7,10 @@ $client->publish('public', ['messageCount' => 1]);
 ?>
 
 <html>
+<title>Centrifugal PHP</title>
 <body>
-<form action="/" method="POST">
-    <input type="submit" value="Send">
+<form method="POST">
+    <input type="submit" value="Send from PHP">
 </form>
 </body>
 </html>

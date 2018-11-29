@@ -8,6 +8,12 @@ This is a documentation for Centrifugo v1 - see its [documentation](https://cent
 Current version of Centrifugo is v2 - see its [documentation](https://github.com/oleh-ozimok/php-centrifugo)  
 My view of this documentation - [note](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/my_note.md)
 
+# Example
+
+![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/example.gif)
+
+Code Example you can find in folder [code](https://github.com/dykyi-roman/centrifugo-service/tree/master/code) 
+
 # Server
 
 The server runs in the docker container. To start it you need run next command:
@@ -22,23 +28,6 @@ The server runs in the docker container. To start it you need run next command:
      - CENTRIFUGO_ADMIN_SECRET=admin
 
 OR use a [container](https://hub.docker.com/r/centrifugo/centrifugo/) form the officially website.
-
-
-# JWT 
-
-Script for generate JWT token:
-
-* [jwt](https://jwt.io/)
-* [codepen.io](https://codepen.io/anon/pen/BGRmye)
-
-# SSL
-
-You may have a SSL [certificate issue](https://stackoverflow.com/questions/29891619/intermittent-err-ssl-protocol-error-error-for-cross-domain-request/29996698#29996698). The connection point rule can be summarized as:
-
-* `wss` connects on `https only`
-
-* `ws` connects `on http`
-
 
 # JS Client
 
@@ -65,11 +54,20 @@ $client = new \Dykyi\Client\CentrifugoClient('http://localhost:8000','');
 $client->publish('public', ['messageCount' => 1]);
 ```
 
-# Example
+# JWT 
 
-![image](https://github.com/dykyi-roman/centrifugo-service/blob/master/docs/asfasf.png)
+Script for generate JWT token:
 
-Code Example you can find in folder [code](https://github.com/dykyi-roman/centrifugo-service/tree/master/code) 
+* [jwt](https://jwt.io/)
+* [codepen.io](https://codepen.io/anon/pen/BGRmye)
+
+# SSL
+
+You may have a SSL [certificate issue](https://stackoverflow.com/questions/29891619/intermittent-err-ssl-protocol-error-error-for-cross-domain-request/29996698#29996698). The connection point rule can be summarized as:
+
+* `wss` connects on `https only`
+
+* `ws` connects `on http`
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
