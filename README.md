@@ -24,6 +24,7 @@ The server runs in the docker container. To start it you need run next command:
 ### Configuration
 
      - CENTRIFUGO_SECRET=my-secret-token
+     - CENTRIFUGO_API_KEY=my-api-key
      - CENTRIFUGO_ADMIN_PASSWORD=admin
      - CENTRIFUGO_ADMIN_SECRET=admin
 
@@ -68,6 +69,14 @@ You may have a SSL [certificate issue](https://stackoverflow.com/questions/29891
 * `wss` connects on `https only`
 
 * `ws` connects `on http`
+
+# Insecure modes
+
+* `client_insecure` - allows to connect to Centrifugo without JWT token
+
+* `api_insecure` - allows  connect to Centrifugo without API key in HTTP requests
+
+* `admin_insecure` - allows  connect to Centrifugo without admin web interface authentication
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)

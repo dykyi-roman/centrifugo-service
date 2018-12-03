@@ -1,29 +1,31 @@
-web:
-    image: nginx:latest
-    ports:
-        - "8080:80"
-        - "443:443"
-    expose: 
-        - "443"
-    volumes:
-        - ./code:/code
-        - ./ssl:/etc/nginx/ssl
-        - ./site.conf:/etc/nginx/conf.d/site.conf
-    links:
-        - php
-php:
-    image: php:7-fpm
-    volumes:
-        - ./code:/code
-
-centrifugo:
-    image: centrifugo/centrifugo
-    environment:
-        - CENTRIFUGO_SECRET=my-secret-token
-        - CENTRIFUGO_ADMIN_PASSWORD=admin
-        - CENTRIFUGO_ADMIN_SECRET=admin
-    command: centrifugo --config=config.json --api_insecure
-    ports:
-        - "8000:8000"
-    volumes:
-        - ./conf/centrifugo.json:/config.json
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+            - "443:443"
+        expose:
+            - "443"
+        volumes:
+            - ./code:/code
+            - ./ssl:/etc/nginx/ssl
+            - ./site.conf:/etc/nginx/conf.d/site.conf
+        links:
+            - php
+    php:
+        image: php:7-fpm
+        volumes:
+            - ./code:/code
+    centrifugo:
+        image: centrifugo/centrifugo
+        environment:
+            - CENTRIFUGO_SECRET=my-secret-token
+            - CENTRIFUGO_API_KEY=my-api-key
+            - CENTRIFUGO_ADMIN_PASSWORD=admin
+            - CENTRIFUGO_ADMIN_SECRET=admin
+        command: centrifugo --config=config.json
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./conf/centrifugo.json:/config.json

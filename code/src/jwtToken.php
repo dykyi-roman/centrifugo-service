@@ -33,7 +33,7 @@ final class jwtToken
         return implode('.', $segments);
     }
 
-    private function urlsafeB64Encode($input)
+    private function urlsafeB64Encode(string $input)
     {
         return str_replace('=', '', strtr(base64_encode($input), '+/', '-_'));
     }

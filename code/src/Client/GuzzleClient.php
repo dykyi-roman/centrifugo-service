@@ -43,15 +43,17 @@ final class GuzzleClient
      *
      * @param string                $host
      * @param ResponseDataExtractor $extractor
+     * @param string                $apiKey
      * @param LoggerInterface|null  $logger
      */
-    public function __construct(string $host, ResponseDataExtractor $extractor, LoggerInterface $logger = null)
+    public function __construct(string $host, string $apiKey, ResponseDataExtractor $extractor, LoggerInterface $logger = null)
     {
         $this->client = new Client([
             'base_uri' => $host,
             'verify' => false,
             'headers' => [
                 'Content-Type' => 'application/json',
+                'Authorization' => 'apikey ' . $apiKey
             ],
         ]);
 
@@ -68,6 +70,8 @@ final class GuzzleClient
      */
     public function post(array $data, string $uri = ''): object
     {
+
+
         $response = $this->send(new Request('POST', $uri, [], json_encode($data)));
         return $this->extractor->extract($response);
     }

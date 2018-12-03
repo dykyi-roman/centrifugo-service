@@ -1,5 +1,5 @@
 const centrifuge = new Centrifuge('ws://localhost:8000/connection/websocket');
-// centrifuge.setToken($('.token').data('token'));
+centrifuge.setToken($('.token').data('token'));
 
 centrifuge.on('connect', function () {
     $('.status').html('Connect: ' + centrifuge.isConnected());

@@ -1,5 +1,6 @@
 {
   "secret": "$CENTRIFUGO_SECRET",
+  "api_key": "my-api-key",
   "engine": "memory",
   "prometheus": true,
   "admin": true,
